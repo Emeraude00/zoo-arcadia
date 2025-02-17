@@ -1,0 +1,344 @@
+
+/* Ajustement de la bannière */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Ajuster la hauteur pour bien voir le tigre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%; 
+}
+
+/* Ajustement du logo */
+.logo {
+    position: absolute;
+    top: 42%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    top: 3px;
+}
+
+.logo img {
+    max-width: 150px !important; /* Forcer la taille */
+}
+
+/* Navigation */
+.header-content {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Augmente l’espace entre les boutons */
+}
+
+/* Style des boutons */
+nav ul {
+    display: flex;
+    gap: 180px; 
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: #00c853;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Ajustement spécifique pour le bouton Connexion */
+nav a.connexion {
+    position: absolute;
+    top: 70px; /* Ajuste la hauteur pour le mettre sous le logo */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover {
+    background: #009624;
+}
+
+/* Ajustement du bouton "Réservez votre billet" */
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.overlay a {
+    color: white;
+    font-weight: bold;
+    background: #00c853;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.overlay a:hover {
+    background: #009624;
+}
+
+.reservation-section {
+    background-color: #f1f1d1; 
+    border-radius: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Réduction de la hauteur de la zone de réservation */
+.small-reservation {
+    max-width: 600px; 
+    margin-top: -60px; 
+}
+
+/* Ajustement du bouton d’achat */
+.small-reservation .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+/* Suppression de la ligne de séparation */
+.reservation-section {
+    border: none;
+    background-color: transparent;
+}
+.hero-banner {
+    height: 700px; /* Augmente la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+/* Bienvenue */
+
+#welcome-text {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#welcome-text span {
+    color: #62D768; 
+    
+}
+
+/* Presentation */
+#presentation {
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #62D768, #2C5E3D);
+}
+
+#presentation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#presentation img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.presentation-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+
+
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles généraux */
+body {
+    background: linear-gradient(to bottom, #2E7D32, #F5F5DC); 
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Gras */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Normal */
+}
+
+
+main, section, .container {
+    background: transparent !important;
+}
+
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#why-visit {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#why-visit h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #62D768;
+    margin-bottom: 40px;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.feature img {
+    width: 150px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.feature p {
+    font-size: 33px; /* Augmente la taille du texte */
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: white; /* Assure-toi que la couleur est bien visible */
+}
+
+
+
+
+/* Espèces phares */
+#featured-animals {
+    padding: 40px 0;
+}
+
+.animal-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.animal img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card {
+    height: 100%; /* Permet aux cartes d'occuper toute la hauteur */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 300px; /* Ajuste cette valeur selon la hauteur souhaitée */
+    object-fit: contain; /* Permet d'afficher l'image sans la couper */
+    width: 100%;
+    background-color: #fff; /* Ajoute un fond blanc si l'image n'occupe pas toute la carte */
+}
+
+/* Avis des visiteurs */
+.avis-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.avis-card h5 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.avis-card p {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
