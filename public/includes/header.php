@@ -22,13 +22,17 @@
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="habitats.php">Habitats</a></li>
-                    <li><a class="connexion" href="connexion.php">Connexion</a></li>
+                    <li><a class="connexion" href="login.php">Connexion</a></li>
                     <li><a href="services.php">Services</a></li>
                     <li><a href="contact.php">Contact</a></li>
+                    
                     
                 </ul>
             </nav>
         </div>
     </div>
 </header>
+
+<script src="public/js/script.js"></script>
+
 </body>
