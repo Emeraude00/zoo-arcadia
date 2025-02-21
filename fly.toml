@@ -4,8 +4,8 @@ app = "zoo-arcadia"
   dockerfile = "Dockerfile"
 
 [env]
-  APP_ENV = "production"
   PORT = "8080"
+  APP_ENV = "production"
 
 [http_service]
   internal_port = 80
