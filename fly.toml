@@ -1,10 +1,11 @@
 app = "zoo-arcadia"
 
 [build]
-  image = "php:8.1-apache"
+  dockerfile = "Dockerfile"
 
 [env]
   APP_ENV = "production"
+  PORT = "8080"
 
 [http_service]
   internal_port = 80
