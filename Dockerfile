@@ -15,3 +15,12 @@ EXPOSE 80
 
 # Commande de démarrage d'Apache
 CMD ["apache2-foreground"]
+
+# Utiliser une image officielle PHP
+FROM php:8.1-apache
+
+# Copier les fichiers de votre application
+COPY . /var/www/html/
+
+# Exposer le port 80
+EXPOSE 80
